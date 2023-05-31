@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         val networkService = RetrofitHelper.getInstance().create(NetworkService::class.java)
         val repository = ShlokRepository(networkService)
 
-
         mainViewModel = ViewModelProvider(this,MainViewModelFactory(repository)).get(MainViewModel::class.java)
         mainViewModel.shlok.observe(this, Observer {
             Log.i("adi", "onCreate:${it.slok.toString()} ")
