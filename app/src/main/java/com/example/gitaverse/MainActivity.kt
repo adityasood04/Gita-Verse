@@ -34,10 +34,7 @@ class MainActivity : AppCompatActivity() {
             binding.pbMain.visibility = View.GONE
         })
 
-        binding.llVerseOfTheDay.setOnClickListener {
-            binding.llVerseOfTheDay.visibility = View.GONE
-            binding.llDetails.visibility = View.VISIBLE
-        }
-
     }
+
+
 }
